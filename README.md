@@ -1,2 +1,2 @@
-# AI_LabReport2
-INTRODUCTION TO AI LAB REPORT 2
+# Genetic Algorithm
+
