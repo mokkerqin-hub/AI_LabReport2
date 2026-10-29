@@ -58,13 +58,7 @@ Final average fitness after 50 generations (seeds 0–9, run with the operator s
 
 ## Screenshots
 
-| Live animation | Best individual |
-|---|---|
-| ![Live](screenshots/02_live_animation.png) | ![Best](screenshots/03_best_and_convergence.png) |
-| **Population charts** | **Problem setup (sidebar)** |
-| ![Population](screenshots/04_population.png) | ![Setup](screenshots/01_setup.png) |
-| **How it works** | |
-| ![How it works](screenshots/06_how_it_works.png) | |
+
 
 ## Run locally
 1. Download this repo (green Code button → Download ZIP) and unzip it.
