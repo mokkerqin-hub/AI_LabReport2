@@ -4,9 +4,9 @@ BSD3513 Introduction to Artificial Intelligence, Lab Report 2 (Question 2).
 
 A Streamlit app that runs a genetic algorithm (GA) to evolve 80-bit chromosomes whose number of ones equals 50.
 
-**Live app:** https://ailabreport2.streamlit.app
+**Live app:** https://ailabreport2-bjpgapp9gz29alguqytxejr.streamlit.app/
 
-## Problem (fixed by the lab sheet)
+## Problem 
 
 | Requirement | Value |
 |---|---|
@@ -67,23 +67,17 @@ Final average fitness after 50 generations (seeds 0–9, run with the operator s
 | ![How it works](screenshots/06_how_it_works.png) | |
 
 ## Run locally
-
+1. Download this repo (green Code button → Download ZIP) and unzip it.
+2. Open a terminal in the folder and run:
 ```bash
-git clone https://github.com/mokkerqin-hub/AI_LabReport2.git
-cd AI_LabReport2
 pip install -r requirements.txt
-streamlit run StudentID_Lab2.py
+streamlit run bfsdfs.py
 ```
 
-## Files
-
+## Project structure
 ```
-StudentID_Lab2.py   # Streamlit app and GA code
-requirements.txt    # Python dependencies
-screenshots/        # App screenshots
+bfsdfs.py            # Streamlit app
+requirements.txt     # dependencies
+screenshots/         # README images
 ```
-
-## Author
-
-Mok Ker Qin, BSD3513 Introduction to Artificial Intelligence, 2026.
 
