@@ -57,7 +57,7 @@ def selection_probabilities(fits: np.ndarray, method: str):
         return fits / fits.sum()
     if method == "Rank-based":
         ranks = np.empty(len(fits))
-        ranks[np.argsort(fits)] = np.arange(1, len(fits) + 1)
+        ranks[np.argsort(fits, kind="stable")] = np.arange(1, len(fits) + 1)
         return ranks / ranks.sum()
     return None
 
@@ -159,7 +159,7 @@ def evolve(pop: np.ndarray, generations: int, selection: str = "Tournament", k: 
             break
 
         # Elitism: carry the top individuals over unchanged
-        elite_idx = np.argsort(fits)[-elitism:] if elitism > 0 else []
+        elite_idx = np.argsort(fits, kind="stable")[-elitism:] if elitism > 0 else []
         new_pop = [pop[i].copy() for i in elite_idx]
 
         # Create next generation (selection -> crossover -> mutation)
@@ -204,12 +204,14 @@ st.set_page_config(page_title="Bit Pattern GA (80 bits, target ones = 50)", page
 
 st.title("🧬 Genetic Algorithm: Evolve an 80-bit Pattern")
 st.caption(
-    "BSD3513 LAB REPORT 2 | MOK KER QIN | SD24032 | 01G"
+    "Fixed requirements: Population = 300, Chromosome Length = 80, Generations = 50.\n"
+    "Fitness peaks at ones = 50, with max fitness = 80."
 )
 
 # Problem setup and fixed requirements on the left (sidebar)
 with st.sidebar:
     st.header("ℹ️ Problem setup")
+    st.caption("Fixed by the lab requirement")
     st.table(pd.DataFrame({
         "Requirement": ["Population size", "Chromosome length", "Target number of ones",
                         "Max fitness at optimum", "Generations"],
@@ -397,4 +399,3 @@ digraph GA {{
         ["Tournament selection", "O(k) per parent", "only k individuals are compared"],
         ["Roulette / rank selection", "O(P) per parent", "plus O(P log P) once per generation to sort for rank"],
     ], columns=["Item", "Complexity", "For this problem"]).set_index("Item"))
-
