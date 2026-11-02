@@ -6,6 +6,7 @@ BSD3513 Introduction to Artificial Intelligence, Lab Report 2
 A Streamlit app that runs a genetic algorithm (GA) to evolve 80-bit chromosomes whose number of ones equals 50.
 
 **Live app:** https://ailabreport2-bjpgapp9gz29alguqytxejr.streamlit.app/
+
 **Repository:** https://github.com/mokkerqin-hub/AI_LabReport2
 
 ## Problem
