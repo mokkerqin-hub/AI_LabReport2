@@ -204,8 +204,7 @@ st.set_page_config(page_title="Bit Pattern GA (80 bits, target ones = 50)", page
 
 st.title("🧬 Genetic Algorithm: Evolve an 80-bit Pattern")
 st.caption(
-    "Fixed requirements: Population = 300, Chromosome Length = 80, Generations = 50.\n"
-    "Fitness peaks at ones = 50, with max fitness = 80."
+    "BSD3513 LAB REPORT 2 | MOK KER QIN | SD24032"
 )
 
 # Problem setup and fixed requirements on the left (sidebar)
