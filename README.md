@@ -1,6 +1,7 @@
 # 🧬 Genetic Algorithm: Evolve an 80-bit Pattern
 
 BSD3513 Introduction to Artificial Intelligence, Lab Report 2 
+
 **Mok Ker Qin | SD24032**
 
 A Streamlit app that runs a genetic algorithm (GA) to evolve 80-bit chromosomes whose number of ones equals 50.
