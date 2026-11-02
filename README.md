@@ -55,7 +55,7 @@ Fitness function: `f(x) = 80 - |ones(x) - 50|`
       <b>GA flowchart</b><br>Flowchart of the genetic algorithm loop in the How it works tab.
     </td>
     <td align="center" width="50%">
-      <img src="screenshot/howitwork.png" width="100%"><br>
+      <img src="screenshot/howitworks.png" width="100%"><br>
       <b>Phases, operators and complexity</b><br>Tables of the five GA phases, operator options and complexity.
     </td>
   </tr>
