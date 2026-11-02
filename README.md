@@ -1,6 +1,6 @@
 # 🧬 Genetic Algorithm: Evolve an 80-bit Pattern
 
-BSD3513 Introduction to Artificial Intelligence, Lab Report 2 (Question 2)
+BSD3513 Introduction to Artificial Intelligence, Lab Report 2 
 **Mok Ker Qin | SD24032**
 
 A Streamlit app that runs a genetic algorithm (GA) to evolve 80-bit chromosomes whose number of ones equals 50.
@@ -32,25 +32,34 @@ Fitness function: `f(x) = 80 - |ones(x) - 50|`
 
 ## Screenshots
 
-### 1. Home page
-![Home page](screenshot/cover.png)
-The sidebar shows the fixed lab requirements and the fitness function. The **Run GA** tab lets the user set a random seed, turn the live animation on or off, adjust its speed, and open the optional GA operator settings before clicking **Run Genetic Algorithm**.
-
-### 2. Best individual and convergence
-![Best individual and convergence](screenshot/convergence.png)
-After a run (seed 42), the best individual reaches the maximum fitness of **80 / 80** with exactly **50 ones** and 30 zeros, and its 80-bit string is displayed. The convergence chart plots the best, average and worst fitness for each generation: the best line stays at 80, while the average rises from about 70 to about 78 as the population improves.
-
-### 3. Population moving towards 50 ones
-![Population and final distribution](screenshot/chart.png)
-The top chart shows the average number of ones climbing from about 40 to the target of 50 within the first few generations, with the green bars counting how many individuals have exactly 50 ones. The histogram shows the final population clustered around 50 ones.
-
-### 4. GA flowchart
-![GA flowchart](screenshot/flowchart.png)
-The **How it works** tab shows the GA loop: initialization → fitness assignment → termination check → selection → crossover → mutation → new population (2 elites + 298 children), repeated for 50 generations.
-
-### 5. Phases, operators and complexity
-![Phases, operators and complexity](screenshot/hotitworks.png)
-Tables explain the five GA phases with the function that implements each one, the available selection, crossover and mutation methods, and the complexity: time O(G × P × L) = 50 × 300 × 80 = 1.2 million bit operations, and memory O(P × L) = 24,000 bits.
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="screenshot/cover.png" width="60%"><br>
+      <b>Home page</b><br>Problem setup in the sidebar and the Run GA controls.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/convergence.png" width="100%"><br>
+      <b>Best individual and convergence</b><br>The best individual found and the fitness chart across generations.
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/chart.png" width="100%"><br>
+      <b>Population results</b><br>Average number of ones per generation and the final population distribution.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/flowchart.png" width="100%"><br>
+      <b>GA flowchart</b><br>Flowchart of the genetic algorithm loop in the How it works tab.
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/howitwork.png" width="100%"><br>
+      <b>Phases, operators and complexity</b><br>Tables of the five GA phases, operator options and complexity.
+    </td>
+  </tr>
+</table>
 
 ## Run locally
 1. Download this repo (green **Code** button → **Download ZIP**) and unzip it.
@@ -64,5 +73,5 @@ streamlit run AI_Lab2.py
 ```
 AI_Lab2.py           # Streamlit app
 requirements.txt     # dependencies
-screenshot/          # screenshots of the live app
+screenshot/          # README images
 ```
